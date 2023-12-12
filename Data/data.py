@@ -1,6 +1,6 @@
 
 from ultralytics import YOLO
-nbrtuModel = YOLO('AI_Model/ublDA_v1.pt')
+nbrtuModel = YOLO('AI_Model/model.pt')
 
 
 NBRTU_val = [
