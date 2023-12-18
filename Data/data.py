@@ -1,6 +1,6 @@
 
 from ultralytics import YOLO
-nbrtuModel = YOLO('AI_Model/model.pt')
+nbrtuModel = YOLO('AI_Model/Nagad_AI_V7.pt')
 
 
 NBRTU_val = [
@@ -140,8 +140,8 @@ ndel_items = [
                 'nagad_shop_banner_customized', # new add v5
                 'tap_table_top_qr', # add new v5
                 'bkash_hanger_push-pull_door', # add new v5
-                'rocket_shop_banner_price' # add new v6
-                'nagad_festoon_send_money', # new add v6
+                'rocket_shop_banner_price', # add new v6
+                'nagad_festoon_send_money' # new add v6
             ]
 
 
