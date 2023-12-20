@@ -1,6 +1,8 @@
 # nagad_version_7
 # github : https://github.com/RH-NAYM/nagad_version_7.git
 
+# model link : https://nagad-pulse.sgp1.digitaloceanspaces.com/nagad_version_7.zip
+
 sudo apt install iproute2 && sudo apt install wget && sudo apt install unzip && apt install nvtop 
 
 apt-get update && apt-get install libgl1
