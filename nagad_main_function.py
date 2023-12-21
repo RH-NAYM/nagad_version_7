@@ -45,7 +45,7 @@ async def getImage(img_url, session):
 async def detection(model,img_content):
     img = Image.open(img_content)
     # result = model(img)
-    result = model(img,device=0)
+    result = model(img)
     
     detection = {}
     data = json.loads(result[0].tojson())
@@ -66,8 +66,10 @@ async def detection(model,img_content):
 
 async def mainDet(url):
     async with ClientSession() as session:
+        nbrtuModel.to(device=0)
         image = await asyncio.create_task(getImage(url, session))
         nbrtuDict = await asyncio.create_task(detection(nbrtuModel, image))
+
         
 
         for val_item in NBRTU_val:
