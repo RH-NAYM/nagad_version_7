@@ -44,7 +44,8 @@ async def getImage(img_url, session):
 
 async def detection(model,img_content):
     img = Image.open(img_content)
-    result = model(img)
+    # result = model(img)
+    result = model(img,device=0)
     
     detection = {}
     data = json.loads(result[0].tojson())
@@ -108,4 +109,4 @@ async def mainDet(url):
 
 
 
-        return nagad_result
+        return nagad_result
