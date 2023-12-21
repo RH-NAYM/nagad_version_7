@@ -109,4 +109,4 @@ async def mainDet(url):
 
 
 
-        return nagad_result
+        return nagad_result
